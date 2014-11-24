@@ -5,9 +5,13 @@ Android OnAudioFocusChangeListener for Unity
 
 Android lib that informs unity about audio focus changes.
 
-### Ready to use asset with demo scene: OnAudioFocusChangeListener.unitypackage
+### Ready to use asset with demo scene:
 
-### Ready to use lib: OnAudioFocusChangeListener.jar
+OnAudioFocusChangeListener.unitypackage
+
+### Ready to use lib:
+
+OnAudioFocusChangeListener.jar
 
 ### Known issues:
 
