@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="audiolistener:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/audiolistener_jar</output-path>
+    <root id="archive" name="audiolistener.jar">
+      <element id="module-output" name="audiolistener" />
+    </root>
+  </artifact>
+</component>
