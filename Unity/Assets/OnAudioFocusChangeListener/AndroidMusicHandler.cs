@@ -26,20 +26,13 @@ namespace OnAudioFocusChangedListener.Android
 		{
 			get
 			{
-				return _androidAudioListener ?? (_androidAudioListener = new AndroidJavaClass("net.kibotu.audiolistener.AudioListener"));
-			}
-		}
-		
-		private static AndroidJavaObject _activity;
-		public static AndroidJavaObject AndroidActivity {
-			get {
-				return _activity ?? (_activity = new AndroidJavaClass("com.unity3d.player.UnityPlayer").GetStatic<AndroidJavaObject>("currentActivity"));
+				return _androidAudioListener ?? (_androidAudioListener = new AndroidJavaClass("net.kibotu.audiolistener.OnAudioFocusChangeListenerService"));
 			}
 		}
 
 		private static bool IsAndroidMusicPlaying ()
 		{	
-			return AndroidAudioListener.CallStatic<bool> ("IsAndroidMusicPlaying", AndroidActivity);
+			return AndroidAudioListener.CallStatic<bool> ("isMusicActive");
 		} 
 
 		private static void RegisterUnityAndroidCallbackListener ()
@@ -50,7 +43,9 @@ namespace OnAudioFocusChangedListener.Android
 			androidMessageReceiver = new GameObject("AndroidMusicHandler");
 			androidMessageReceiver.AddComponent<AndroidMusicHandler>();
 
-			AndroidAudioListener.CallStatic ("RegisterUnityAndroidCallbackListener", AndroidActivity);
+			Debug.Log ("RegisterUnityAndroidCallbackListener");
+
+			AndroidAudioListener.CallStatic ("RegisterUnityAndroidCallbackListener");
 		}
 
 		private static void UnregisterUnityAndroidCallbackListener ()
@@ -58,8 +53,21 @@ namespace OnAudioFocusChangedListener.Android
 			if (androidMessageReceiver != null) {
 				Destroy(androidMessageReceiver);
 			}
+			
+			Debug.Log ("UnregisterUnityAndroidCallbackListener");
 
-			AndroidAudioListener.CallStatic ("UnregisterUnityAndroidCallbackListener", AndroidActivity);
+			// abandon audio focus. Causes the previous focus owner, if any, to receive focus. AUDIOFOCUS_REQUEST_FAILED or AUDIOFOCUS_REQUEST_GRANTED
+			AndroidAudioListener.CallStatic<int> ("UnregisterUnityAndroidCallbackListener");
+		}
+
+		public static void DisableFMOD()
+		{
+			AndroidAudioListener.CallStatic ("stopFMOD");
+		}
+
+		public static void EnableFMOD()
+		{			
+			AndroidAudioListener.CallStatic ("startFMOD");
 		}
 
 		#endregion

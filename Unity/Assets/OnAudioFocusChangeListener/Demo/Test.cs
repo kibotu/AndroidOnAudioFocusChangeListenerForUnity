@@ -7,11 +7,12 @@ namespace OnAudioFocusChangedListener.Android
 	public class Test : MonoBehaviour {
 
 		public GameObject Content;
-		public GameObject prefab;
+		public GameObject Prefab;
+		public AudioSource Music;
 
 		public void StartListening() 
 		{
-			Debug.Log("StartListening");
+			Debug.Log("RegisterAndroidCallbackListener");
 			AddLog ("StartListening");
 			AndroidMusicHandler.RegisterAndroidCallbackListener ((state) => {
 
@@ -32,21 +33,41 @@ namespace OnAudioFocusChangedListener.Android
 		public void StopListening() 
 		{
 			Debug.Log("UnregisterAndroidCallbackListener");
-			AddLog ("UnregisterAndroidCallbackListener");
+			AddLog ("StopListening");
 			AndroidMusicHandler.UnregisterAndroidCallbackListener ();
 		}
 
 		public void IsMusicOn() 
 		{
 			var text = (AndroidMusicHandler.IsMusicActive ? "Music is on." : "Music is off.") + "\n";
-			Debug.Log("UnregisterAndroidCallbackListener " + text);
+			Debug.Log("AndroidMusicHandler.IsMusicActive " + text);
 			AddLog (text);
 		}
 
 		public void AddLog(string msg) {
-			var t = Instantiate(prefab) as GameObject;
+			var t = Instantiate(Prefab) as GameObject;
 			t.GetComponent<Text>().text = msg;
 			t.transform.SetParent(Content.transform, false);
+		}
+
+		public void StartMusic() {
+			AddLog ("Start Music");
+			Music.Play ();
+		}
+
+		public void StopMusic() {
+			AddLog ("Stop Music");
+			Music.Stop ();
+		}
+
+		public void StartFMOD() {
+			AddLog ("Start FMOD");
+			AndroidMusicHandler.EnableFMOD ();
+		}
+		
+		public void StopFMOD() {
+			AddLog ("Stop FMOD");
+			AndroidMusicHandler.DisableFMOD ();
 		}
 	}
 }
