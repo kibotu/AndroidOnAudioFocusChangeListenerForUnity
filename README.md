@@ -61,7 +61,6 @@ Register a callback listener:
             default: stateText = state; break;
         }
         Debug.Log(stateText);
-        AddLog (stateText);
     });
 
 And finally unregister the callback when you're done.
