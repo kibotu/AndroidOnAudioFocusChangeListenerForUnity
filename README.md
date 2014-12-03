@@ -69,6 +69,7 @@ Enjoy. :)
 ### Known issues:
 
 - AndroidMusicHandler.isMusicActive blocks main thread for at least 150ms to start being reliable while unity is active, is there any other way? please let me know! :(
+- AndroidMusicHandlerRegisterAndroidCallbackListener will request audio focus and basically mutes background player. This is sadly the only way to actually register a [listener to audio focus](http://developer.android.com/reference/android/media/AudioManager.OnAudioFocusChangeListener.html) changes. 
 
 ### Made and tested for Unity3D 4.6.03f
 
