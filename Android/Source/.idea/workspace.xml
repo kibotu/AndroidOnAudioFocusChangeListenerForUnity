@@ -22,34 +22,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ddd489d-e207-4f73-be21-36c7a035f6f4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Android.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/kibotu/audiolistener/ManualUnityActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/kibotu/audiolistener/OnAudioFocusChangeListenerService.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/net/kibotu/audiolistener/AudioListener.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/net/kibotu/audiolistener/NoisyAudioStreamReceiver.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/Audio.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/Audio/SoundTest.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/Audio/SoundTest.mp3.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/OnAudioFocusChangeListener/Scenes.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/OnAudioFocusChangeListener/Scenes/Demo.unity" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/OnAudioFocusChangeListener/Scenes/Demo.unity.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/OnAudioFocusChangeListener/Scenes/Text.prefab" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/OnAudioFocusChangeListener/Scenes/Text.prefab.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/OnAudioFocusChangeListener/Scripts.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/OnAudioFocusChangeListener/Scripts/AndroidMusicHandler.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/OnAudioFocusChangeListener/Scripts/AndroidMusicHandler.cs.meta" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/OnAudioFocusChangeListener/Scripts/Test.cs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../../Unity/Assets/OnAudioFocusChangeListener/Scripts/Test.cs.meta" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Unity/ProjectSettings/AudioManager.asset" afterPath="$PROJECT_DIR$/../../Unity/ProjectSettings/AudioManager.asset" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Unity/ProjectSettings/EditorBuildSettings.asset" afterPath="$PROJECT_DIR$/../../Unity/ProjectSettings/EditorBuildSettings.asset" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../OnAudioFocusChangeListener.jar" afterPath="$PROJECT_DIR$/../../OnAudioFocusChangeListener.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Unity/Assets/Plugins/Android/OnAudioFocusChangeListener.jar" afterPath="$PROJECT_DIR$/../../Unity/Assets/Plugins/Android/OnAudioFocusChangeListener.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Unity/ProjectSettings/ProjectSettings.asset" afterPath="$PROJECT_DIR$/../../Unity/ProjectSettings/ProjectSettings.asset" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/OnAudioFocusChangeListener.iml" afterPath="$PROJECT_DIR$/OnAudioFocusChangeListener.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Unity/Assets/Plugins/Android/OnAudioFocusChangeListener.jar.meta" afterPath="$PROJECT_DIR$/../../Unity/Assets/Plugins/Android/OnAudioFocusChangeListener.jar.meta" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/kibotu/audiolistener/OnAudioFocusChangeListenerService.java" afterPath="$PROJECT_DIR$/src/net/kibotu/audiolistener/OnAudioFocusChangeListenerService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../README.md" afterPath="$PROJECT_DIR$/../../README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="audiolistener.iws" />
@@ -136,11 +110,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ManualUnityActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/net/kibotu/audiolistener/ManualUnityActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="OnAudioFocusChangeListenerService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/kibotu/audiolistener/OnAudioFocusChangeListenerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7105263" vertical-offset="0" max-vertical-offset="2985">
-              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+            <state vertical-scroll-proportion="0.55263156" vertical-offset="0" max-vertical-offset="2985">
+              <caret line="14" column="46" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6469#6482#0" expanded="false" />
@@ -815,12 +799,12 @@
       <workItem from="1417160145308" duration="8311000" />
       <workItem from="1417427893169" duration="30409000" />
       <workItem from="1417600666002" duration="4837000" />
-      <workItem from="1417609562840" duration="6566000" />
+      <workItem from="1417609562840" duration="6708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87104000" />
+    <option name="totallyTimeSpent" value="87246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1020" extended-state="6" />
@@ -1224,14 +1208,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/kibotu/audiolistener/ManualUnityActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
-          <caret line="0" column="8" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="240">
@@ -1270,10 +1246,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/net/kibotu/audiolistener/ManualUnityActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/net/kibotu/audiolistener/OnAudioFocusChangeListenerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7105263" vertical-offset="0" max-vertical-offset="2985">
-          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.55263156" vertical-offset="0" max-vertical-offset="2985">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6469#6482#0" expanded="false" />

@@ -16,7 +16,7 @@ public class OnAudioFocusChangeListenerService extends Service implements AudioM
 
     private static AudioManager audioManager;
     private static final String TAG = OnAudioFocusChangeListenerService.class.getSimpleName();
-    public static boolean DEBUG = true;
+    public static boolean DEBUG = false;
     private static OnAudioFocusChangeListenerService instance;
 
     // region service
@@ -26,6 +26,7 @@ public class OnAudioFocusChangeListenerService extends Service implements AudioM
         instance = this;
         Log("Starting OnAudioFocusChangeListener as background service.");
         audioManager = ((AudioManager) getApplicationContext().getSystemService(AUDIO_SERVICE));
+        audioManager.requestAudioFocus(instance, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
     }
 
     @Override
@@ -44,12 +45,14 @@ public class OnAudioFocusChangeListenerService extends Service implements AudioM
 
     public static void RegisterUnityAndroidCallbackListener() {
         Log("RegisterUnityAndroidCallbackListener");
-        audioManager.requestAudioFocus(this, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
+        UnityPlayer.currentActivity.startService(new Intent(UnityPlayer.currentActivity, OnAudioFocusChangeListenerService.class));
     }
 
     public static int UnregisterUnityAndroidCallbackListener() {
         Log("UnregisterUnityAndroidCallbackListener");
-        return audioManager.abandonAudioFocus(instance);
+        int result = audioManager.abandonAudioFocus(instance);
+        UnityPlayer.currentActivity.stopService(new Intent(UnityPlayer.currentActivity, OnAudioFocusChangeListenerService.class));
+        return result;
     }
 
     @Override
