@@ -33,6 +33,10 @@ For the direct approach you will need the 3 files:
 
 2) [Assets/Plugins/Android/AndroidManifest.xml](https://raw.githubusercontent.com/kibotu/AndroidOnAudioFocusChangeListenerForUnity/master/Unity/Assets/Plugins/Android/AndroidManifest.xml)
 
+Important part is the exchange of the default [UnityPlayerNativeActivity by ManualUnityActivity](https://github.com/kibotu/AndroidOnAudioFocusChangeListenerForUnity/blob/master/Unity/Assets/Plugins/Android/AndroidManifest.xml#L23) in order to access mUnityPlayer for direct access to unity's fmod player.
+
+And the manifest entry for the [focus change listener service](https://github.com/kibotu/AndroidOnAudioFocusChangeListenerForUnity/blob/master/Unity/Assets/Plugins/Android/AndroidManifest.xml#L32-L34).
+
 3) [AndroidMusicHandler.cs](https://raw.githubusercontent.com/kibotu/AndroidOnAudioFocusChangeListenerForUnity/master/Unity/Assets/OnAudioFocusChangeListener/AndroidMusicHandler.cs)
 
 ### How to use
