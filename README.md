@@ -5,6 +5,8 @@ Android OnAudioFocusChangeListener for Unity
 
 Android plugin library that informs unity about audio focus changes. It also has a reliable way of telling if other applications are currently playing music within unity.
 
+![Screenshot](https://raw.githubusercontent.com/kibotu/AndroidOnAudioFocusChangeListenerForUnity/master/Screenshot.png)
+
 ### Why use this library?
 
 Because otherwise unity's fmod implementation will screw up android's [AudioManager.html#isMusicActive()](http://goo.gl/Aavbhr) and forcing it to lie and it always returns true, even if no music is being played on the device at all.
@@ -22,8 +24,6 @@ Now you can enhance the usability for the end-user by muting your application mu
 [OnAudioFocusChangeListener.jar](https://github.com/kibotu/AndroidOnAudioFocusChangeListenerForUnity/blob/master/OnAudioFocusChangeListener.jar?raw=true)
 
 ### How to install
-
-![Screenshot](https://raw.githubusercontent.com/kibotu/AndroidOnAudioFocusChangeListenerForUnity/master/Screenshot.png)
 
 Whether you directly import the [OnAudioFocusChangeListener.unitypackage](https://github.com/kibotu/AndroidOnAudioFocusChangeListenerForUnity/blob/master/OnAudioFocusChangeListener.unitypackage?raw=true) asset bundle or you add the files directly:
 
