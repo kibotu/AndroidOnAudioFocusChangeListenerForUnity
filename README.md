@@ -54,10 +54,11 @@ Register a callback listener:
         var stateText = "";
 
         switch(int.Parse(state)) {
-            case 1:  stateText = "[AUDIOFOCUS_GAIN](http://developer.android.com/reference/android/media/AudioManager.html#AUDIOFOCUS_GAIN)"; break;
-            case -1:  stateText = "[AUDIOFOCUS_LOSS](http://developer.android.com/reference/android/media/AudioManager.html#AUDIOFOCUS_LOSS)"; break;
-            case -2:  stateText = "[AUDIOFOCUS_LOSS_TRANSIENT](http://developer.android.com/reference/android/media/AudioManager.html#AUDIOFOCUS_LOSS)"; break;
-            case -3:  stateText = "[AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK](http://developer.android.com/reference/android/media/AudioManager.html#AUDIOFOCUS_LOSS)"; break;
+            case 1:   stateText = "AUDIOFOCUS_GAIN"; break;
+            case -1:  stateText = "AUDIOFOCUS_LOSS"; break;
+            case -2:  stateText = "AUDIOFOCUS_LOSS_TRANSIENT"; break;
+            case -3:  stateText = "AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK"; break;
+            case -4:  stateText = "AUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE"; break;
             default: stateText = state; break;
         }
         Debug.Log(stateText);
