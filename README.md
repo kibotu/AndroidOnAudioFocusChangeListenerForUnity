@@ -7,7 +7,7 @@ Android plugin library that informs unity about audio focus changes. It also has
 
 ### Why use this library?
 
-Because otherwise unity's fmod implementation will screw up android's [AudioManager.html#isMusicActive()]('http://developer.android.com/reference/android/media/AudioManager.html#isMusicActive&#0028;&#0029;') and forcing it to lie and it always returns true, even if no music is being played on the device at all.
+Because otherwise unity's fmod implementation will screw up android's [AudioManager.html#isMusicActive()](http://developer.android.com/reference/android/media/AudioManager.html#isMusicActive&#0028;&#0029;) and forcing it to lie and it always returns true, even if no music is being played on the device at all.
 
 ### Why is this cool?
 
