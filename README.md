@@ -70,5 +70,7 @@ Enjoy. :)
 
 - AndroidMusicHandler.isMusicActive blocks main thread for at least 150ms to start being reliable while unity is active, is there any other way? please let me know! :(
 
+### Made and tested for Unity3D 4.6.03f
+
 ### Contact
 * [Jan Rabe](mailto:janrabe@kibotu.net)
